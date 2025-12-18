@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-const WHATSAPP_NUMBER = '1234567890'; // Replace with actual WhatsApp number
+const WHATSAPP_NUMBER = '923091190715';
 
 export default function DatabasesMainContent() {
   const questionBanks = [
@@ -66,19 +66,19 @@ export default function DatabasesMainContent() {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-purple-50 via-purple-100 to-indigo-50 py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8">
+    <section className="bg-gradient-to-br from-purple-50 via-purple-100 to-indigo-50 py-8 sm:py-12">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
           {/* Left Column */}
           <div className="space-y-8">
             {/* Question Banks */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center gap-2">
                 <span className="text-green-600">✅</span>
                 <span className="text-gray-600">⁉️</span>
                 Question Banks:
               </h2>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-700">
                 {questionBanks.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="mr-2">•</span>
@@ -90,12 +90,12 @@ export default function DatabasesMainContent() {
 
             {/* Drug References */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center gap-2">
                 <span className="text-red-600">💉</span>
                 <span className="text-blue-600">💊</span>
                 Drug References:
               </h2>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-700">
                 {drugReferences.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="mr-2">•</span>
@@ -107,12 +107,12 @@ export default function DatabasesMainContent() {
 
             {/* Books & References */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center gap-2">
                 <span className="text-amber-600">📚</span>
                 <span className="text-amber-700">📖</span>
                 Books & References:
               </h2>
-              <p className="text-gray-700">
+              <p className="text-sm sm:text-base text-gray-700">
                 More than 30 thousand latest Books & References from Elsevier, McGrawHill, Thieme, LWW, Oxford, … Along with their Videos.
               </p>
             </div>
@@ -122,12 +122,12 @@ export default function DatabasesMainContent() {
           <div className="space-y-8">
             {/* Clinical Practice Resources */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center gap-2">
                 <span className="text-purple-600">🏥</span>
                 <span className="text-blue-600">🩺</span>
                 Clinical Practice Resources:
               </h2>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-700">
                 {clinicalPractice.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="mr-2">•</span>
@@ -139,11 +139,11 @@ export default function DatabasesMainContent() {
 
             {/* Video Training & Lectures */}
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center gap-2">
                 <span className="text-gray-800">🎥</span>
                 Video Training & Lectures:
               </h2>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-700">
                 {videoTraining.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="mr-2">•</span>
@@ -154,21 +154,21 @@ export default function DatabasesMainContent() {
             </div>
 
             {/* Subscribe CTA */}
-            <div className="bg-white rounded-lg p-6 shadow-lg border-2 border-purple-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <div className="bg-white rounded-lg p-4 sm:p-6 shadow-lg border-2 border-purple-200">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 flex items-center gap-2">
                 <span className="text-red-600">🔥</span>
-                GET all of these premium resources in SINGLE subscription.
+                <span className="text-sm sm:text-base md:text-lg">GET all of these premium resources in SINGLE subscription.</span>
               </h3>
-              <p className="text-lg font-semibold text-gray-800 mb-4">
-                iMD – Your Smart Study Partner!
+              <p className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4">
+                Dr M – Your Smart Study Partner!
               </p>
               <button
                 onClick={() => {
-                  const message = encodeURIComponent('Hello! I would like to subscribe to iMD Resources. Please provide more information.');
+                  const message = encodeURIComponent('Hello! I would like to subscribe to Dr M medical resources. Please provide more information.');
                   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
                   window.open(whatsappUrl, '_blank');
                 }}
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition"
+                className="w-full sm:w-auto inline-block bg-blue-600 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-bold hover:bg-blue-700 transition text-sm sm:text-base"
               >
                 Subscribe now
               </button>

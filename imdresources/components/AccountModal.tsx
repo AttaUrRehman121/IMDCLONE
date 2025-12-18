@@ -79,12 +79,12 @@ export default function AccountModal({ isOpen, onClose, selectedPlan = '1year' }
       onClick={onClose}
     >
       <div 
-        className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+        className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl mx-2 sm:mx-4"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="p-6">
-          <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold">Create iMD Account</h2>
+        <div className="p-4 sm:p-6">
+          <div className="flex justify-between items-center mb-4 sm:mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold">Create Dr M Account</h2>
             <button
               onClick={onClose}
               className="text-gray-500 hover:text-gray-700 text-3xl"
@@ -114,11 +114,11 @@ export default function AccountModal({ isOpen, onClose, selectedPlan = '1year' }
             </p>
           </div>
 
-          <div className="mb-6">
-            <div className="flex gap-4 mb-4">
+          <div className="mb-4 sm:mb-6">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-4">
               <button
                 onClick={() => setPaymentMethod('crypto')}
-                className={`flex-1 py-2 px-4 rounded-lg font-semibold ${
+                className={`flex-1 py-2.5 sm:py-2 px-4 rounded-lg font-semibold text-sm sm:text-base ${
                   paymentMethod === 'crypto'
                     ? 'bg-blue-600 text-white'
                     : 'bg-gray-200 text-gray-700'
@@ -128,7 +128,7 @@ export default function AccountModal({ isOpen, onClose, selectedPlan = '1year' }
               </button>
               <button
                 onClick={() => setPaymentMethod('local')}
-                className={`flex-1 py-2 px-4 rounded-lg font-semibold ${
+                className={`flex-1 py-2.5 sm:py-2 px-4 rounded-lg font-semibold text-sm sm:text-base ${
                   paymentMethod === 'local'
                     ? 'bg-blue-600 text-white'
                     : 'bg-gray-200 text-gray-700'
@@ -145,17 +145,17 @@ export default function AccountModal({ isOpen, onClose, selectedPlan = '1year' }
                 </p>
                 
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Bitcoin address:</label>
-                  <div className="flex gap-2">
+                  <label className="block text-xs sm:text-sm font-semibold mb-2">Bitcoin address:</label>
+                  <div className="flex flex-col sm:flex-row gap-2">
                     <input
                       type="text"
                       value={cryptoAddresses.bitcoin}
                       readOnly
-                      className="flex-1 p-2 border border-gray-300 rounded"
+                      className="flex-1 p-2 text-xs sm:text-sm border border-gray-300 rounded"
                     />
                     <button
                       onClick={() => copyToClipboard(cryptoAddresses.bitcoin)}
-                      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                      className="bg-blue-600 text-white px-3 sm:px-4 py-2 rounded hover:bg-blue-700 text-sm sm:text-base whitespace-nowrap"
                     >
                       Copy
                     </button>
@@ -163,17 +163,17 @@ export default function AccountModal({ isOpen, onClose, selectedPlan = '1year' }
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Tether (TRC20) address:</label>
-                  <div className="flex gap-2">
+                  <label className="block text-xs sm:text-sm font-semibold mb-2">Tether (TRC20) address:</label>
+                  <div className="flex flex-col sm:flex-row gap-2">
                     <input
                       type="text"
                       value={cryptoAddresses.tether}
                       readOnly
-                      className="flex-1 p-2 border border-gray-300 rounded"
+                      className="flex-1 p-2 text-xs sm:text-sm border border-gray-300 rounded"
                     />
                     <button
                       onClick={() => copyToClipboard(cryptoAddresses.tether)}
-                      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                      className="bg-blue-600 text-white px-3 sm:px-4 py-2 rounded hover:bg-blue-700 text-sm sm:text-base whitespace-nowrap"
                     >
                       Copy
                     </button>
@@ -181,17 +181,17 @@ export default function AccountModal({ isOpen, onClose, selectedPlan = '1year' }
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold mb-2">BEP20 USDT Address:</label>
-                  <div className="flex gap-2">
+                  <label className="block text-xs sm:text-sm font-semibold mb-2">BEP20 USDT Address:</label>
+                  <div className="flex flex-col sm:flex-row gap-2">
                     <input
                       type="text"
                       value={cryptoAddresses.bep20}
                       readOnly
-                      className="flex-1 p-2 border border-gray-300 rounded"
+                      className="flex-1 p-2 text-xs sm:text-sm border border-gray-300 rounded"
                     />
                     <button
                       onClick={() => copyToClipboard(cryptoAddresses.bep20)}
-                      className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                      className="bg-blue-600 text-white px-3 sm:px-4 py-2 rounded hover:bg-blue-700 text-sm sm:text-base whitespace-nowrap"
                     >
                       Copy
                     </button>

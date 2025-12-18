@@ -55,7 +55,7 @@ const plans: Plan[] = [
 ];
 
 // WhatsApp number - Replace with actual number (format: country code + number, no + or spaces)
-const WHATSAPP_NUMBER = '1234567890'; // Example: 1234567890 for +1 234 567 8900
+const WHATSAPP_NUMBER = '923091190715';
 
 export default function SubscriptionPlans({ onSubscribe }: { onSubscribe: (planId: string) => void }) {
   const handleWhatsAppRedirect = (plan: Plan, action: 'subscribe' | 'extend') => {
@@ -66,23 +66,23 @@ export default function SubscriptionPlans({ onSubscribe }: { onSubscribe: (planI
     window.open(whatsappUrl, '_blank');
   };
   return (
-    <section id="subscribe" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-900">
-          CHOOSE YOUR iMD SUBSCRIPTION PLAN
+    <section id="subscribe" className="py-12 sm:py-16 md:py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 text-gray-900">
+          CHOOSE YOUR DR M SUBSCRIPTION PLAN
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mt-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mt-8 sm:mt-12">
           {plans.map((plan) => (
             <div
               key={plan.id}
-              className="bg-white border-2 border-gray-300 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all"
+              className="bg-white border-2 border-gray-300 rounded-2xl p-5 sm:p-6 md:p-8 shadow-lg hover:shadow-xl transition-all"
             >
-              <h3 className="text-xl md:text-2xl font-bold text-center mb-4 text-gray-900">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-3 sm:mb-4 text-gray-900">
                 {plan.name}
               </h3>
-              <div className="text-center mb-6">
-                <span className="text-4xl md:text-5xl font-bold text-blue-600">${plan.price}</span>
+              <div className="text-center mb-4 sm:mb-6">
+                <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-600">${plan.price}</span>
               </div>
               
               <ul className="space-y-3 md:space-y-4 mb-8">
