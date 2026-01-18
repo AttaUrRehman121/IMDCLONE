@@ -54,8 +54,8 @@ const plans: Plan[] = [
   }
 ];
 
-// WhatsApp number - Replace with actual number (format: country code + number, no + or spaces)
-const WHATSAPP_NUMBER = '1234567890'; // Example: 1234567890 for +1 234 567 8900
+// WhatsApp number - Pakistan number (format: country code + number, no + or spaces)
+const WHATSAPP_NUMBER = '923181617213'; // 0318 1617213 (Pakistan: 92 + 3181617213)
 
 export default function SubscriptionPlans({ onSubscribe }: { onSubscribe: (planId: string) => void }) {
   const handleWhatsAppRedirect = (plan: Plan, action: 'subscribe' | 'extend') => {

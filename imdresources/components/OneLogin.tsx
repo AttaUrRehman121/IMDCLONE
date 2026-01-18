@@ -1,6 +1,6 @@
 'use client';
 
-const WHATSAPP_NUMBER = '1234567890'; // Replace with actual WhatsApp number
+const WHATSAPP_NUMBER = '923181617213'; // 0318 1617213 (Pakistan: 92 + 3181617213)
 
 export default function OneLogin() {
   const handleWhatsAppRedirect = (action: 'subscribe' | 'install') => {

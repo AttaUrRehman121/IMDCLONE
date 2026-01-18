@@ -14,8 +14,8 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
     {
       name: 'iMD Resources',
       subtitle: 'iMD Rahmat',
-      phone: '+1234567890', // Replace with actual WhatsApp number (e.g., +1234567890)
-      whatsappUrl: 'https://wa.me/1234567890' // Replace with actual WhatsApp URL - format: https://wa.me/[country_code][number] (no + or spaces)
+      phone: '+92 318 1617213', // 0318 1617213 (Pakistan)
+      whatsappUrl: 'https://wa.me/923181617213' // Format: https://wa.me/[country_code][number] (no + or spaces)
     }
   ];
 
