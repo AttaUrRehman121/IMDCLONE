@@ -15,19 +15,19 @@ export default function Header({ onAccountClick }: HeaderProps) {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative w-12 h-12">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3">
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0">
               <Image
                 src="/IMD-Medical-Resources-300x300.webp"
-                alt="iMD Medical Resources Logo"
+                alt="Dr M medical resources Logo"
                 fill
                 className="object-contain"
-                sizes="48px"
+                sizes="(max-width: 640px) 40px, 48px"
               />
             </div>
-            <div className="flex flex-col">
-              <span className="text-xs font-semibold text-gray-600 leading-tight">iMD MEDICAL RESOURCES</span>
-              <span className="text-lg font-bold text-blue-600 leading-tight">iMD Medical Resources</span>
+            <div className="flex flex-col min-w-0">
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-600 leading-tight truncate">DR M MEDICAL RESOURCES</span>
+              <span className="text-sm sm:text-base md:text-lg font-bold text-blue-600 leading-tight truncate">Dr M medical resources</span>
             </div>
           </Link>
           

@@ -1,0 +1,12 @@
+{
+  "name": "imdclone",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd imdresources && npm run dev",
+    "build": "cd imdresources && npm run build",
+    "start": "cd imdresources && npm run start",
+    "lint": "cd imdresources && npm run lint"
+  }
+}
+

@@ -12,8 +12,8 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
 
   const contacts = [
     {
-      name: 'iMD Resources',
-      subtitle: 'iMD Rahmat',
+      name: 'Dr M medical resources',
+      subtitle: 'Wahab Waris',
       phone: '+92 318 1617213', // 0318 1617213 (Pakistan)
       whatsappUrl: 'https://wa.me/923181617213' // Format: https://wa.me/[country_code][number] (no + or spaces)
     }
@@ -34,7 +34,7 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
       />
       
       {/* Chat Widget */}
-      <div className="fixed bottom-24 right-6 z-50 w-80 bg-white rounded-lg shadow-2xl overflow-hidden">
+      <div className="fixed bottom-20 sm:bottom-24 right-2 sm:right-4 md:right-6 z-50 w-[calc(100vw-1rem)] sm:w-80 max-w-sm bg-white rounded-lg shadow-2xl overflow-hidden">
         {/* Header */}
         <div className="bg-green-600 px-4 py-3 flex items-center gap-3">
           <div className="bg-white rounded-full p-2">
@@ -83,7 +83,7 @@ export default function WhatsAppChat({ isOpen, onClose }: WhatsAppChatProps) {
       {/* Close Button */}
       <button
         onClick={onClose}
-        className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-2xl transition transform hover:scale-110"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-green-600 hover:bg-green-700 text-white rounded-full p-3 sm:p-4 shadow-2xl transition transform hover:scale-110"
         aria-label="Close chat"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

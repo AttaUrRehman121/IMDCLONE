@@ -1,11 +1,11 @@
 export default function Features() {
   return (
-    <section className="py-16 bg-gray-100">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+    <section className="py-12 sm:py-16 bg-gray-100">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-8">
           {/* Card 1: USMLE */}
-          <div className="bg-gray-800 rounded-2xl p-8 text-white">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <div className="bg-gray-800 rounded-2xl p-6 sm:p-8 text-white">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
               Everything You Need To Ace USMLE in One Platform
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -24,9 +24,9 @@ export default function Features() {
           </div>
 
           {/* Card 2: Device Access */}
-          <div className="bg-gray-800 rounded-2xl p-8 text-white">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Access iMD App on any of your Device
+          <div className="bg-gray-800 rounded-2xl p-6 sm:p-8 text-white">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
+              Access Dr M App on any of your Device
             </h2>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Use your account and switch between devices seamlessly. After subscribing you will be emailed installation link and guide to use.
